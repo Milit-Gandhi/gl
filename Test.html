@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="question-controls">
+            <div id="question-container" class="question-container"></div>
+            <button id="listen-btn" class="listen-btn"><i class="fas fa-volume-up"></i></button>
+            <div id="timer" class="timer">60</div>
+        </div>
+        <div id="options-container" class="options-container"></div>
+        <button id="next-btn" class="next-btn">Next Question <i class="fas fa-arrow-right"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Timer functionality
+        // let timeLeft = 60; // Initial time in seconds
+        // const timerElement = document.getElementById("timer");
+
+        // function updateTimer() {
+        //     if (timeLeft > 0) {
+        //         timeLeft--;
+        //         timerElement.textContent = timeLeft;
+        //     } else {
+        //         examFinished();
+        //         // Timer expired, complete the assessment
+        //         console.log("Time's up! Assessment completed.");
+        //         // Add your code to handle assessment completion here
+        //     }
+        // }
+
+        // // Update the timer every second
+        // const timerInterval = setInterval(updateTimer, 1000);
+        initializeQuiz(true);
+    </script>
+</body>
+</html>

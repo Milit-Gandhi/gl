@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCQ Exam</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="menu">
+            <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="menu-list">
+                <li> <a href="Test.html" class="menu-link">Start Assessment</a>Test</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div class="question-controls">
+            <div id="question-container" class="question-container"></div>
+            <button id="listen-btn" class="listen-btn"><i class="fas fa-volume-up"></i></button>
+        </div>
+        <div id="options-container" class="options-container"></div>
+        <button id="next-btn" class="next-btn">Next Question <i class="fas fa-arrow-right"></i></button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Toggle sidebar menu
+        const menuToggle = document.getElementById("menu-toggle");
+        const menuList = document.querySelector(".menu-list");
+
+        menuToggle.addEventListener("click", () => {
+            console.log("clicked")
+            menuList.classList.toggle("show");
+        });
+        initializeQuiz(false);
+    </script>
+</body>
+
+</html>

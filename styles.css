@@ -1,0 +1,207 @@
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question-container {
+    flex: 1; /* Take remaining space */
+    margin-right: 10px; /* Add space between question and listen button */
+}
+
+.listen-btn, .next-btn {
+    background-color: transparent; /* Remove background color */
+    color: #007bff; /* Set text color */
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 50%; /* Make it round */
+    cursor: pointer;
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+.listen-btn:hover, .next-btn:hover {
+    color: #0056b3; /* Change text color on hover */
+}
+
+.listen-btn i, .next-btn i {
+    font-size: 14px;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #ccc;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option.correct {
+  background-color: #63c363; /* Light green for selected option */
+}
+
+.option.incorrect {
+  background-color: #ff6f6f; /* Light red for incorrect option */
+}
+
+
+.option.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Basic styles for sidebar */
+/* Basic styles for sidebar */
+/* Sidebar */
+.sidebar {
+  background-color: #333; /* Change background color of the sidebar */
+  width: 250px; /* Adjust sidebar width */
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.menu {
+  padding-left: 20px;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  transition: color 0.3s ease; /* Add transition for color change */
+}
+
+.menu-toggle:hover {
+  color: #ccc; /* Change color on hover */
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+  transition: opacity 0.3s ease; /* Add transition for opacity */
+}
+
+.menu-list li {
+  margin-bottom: 10px;
+  transition: transform 0.3s ease; /* Add transition for transform */
+}
+
+.menu-list a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Add transition for color change */
+}
+
+.menu-list a:hover {
+  color: #ccc; /* Change color on hover */
+}
+
+/* Hide menu by default */
+.menu-list {
+  opacity: 0;
+}
+
+/* Show menu when toggled */
+.menu-list.show {
+  opacity: 1;
+}
+
+/* Content area styles */
+.content {
+  margin-left: 250px; /* Adjust for sidebar width */
+  padding: 20px;
+  transition: margin-left 0.3s ease; /* Add transition for content */
+}
+
+/* Hover effect for menu items */
+.menu-list a:hover {
+  background-color: #444;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Animation for opening and closing the menu */
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.3s forwards;
+}
+
+.slide-out {
+  animation: slideOut 0.3s forwards;
+}
+
+
+
+.menu-list li {
+  margin-bottom: 10px;
+  transition: transform 0.3s ease; /* Add transition for transform */
+  display: inline-block; /* Display items inline */
+  width: calc(50% - 20px); /* Adjust width of tiles, considering margins */
+  padding: 10px;
+  background-color: #ff5733; /* Change background color of menu tiles */
+  border-radius: 5px;
+  text-align: center;
+}
+
+.menu-list a {
+  display: block; /* Make the entire menu tile clickable */
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Add transition for color change */
+}
+
+.menu-list a:hover {
+  color: #ccc; /* Change color on hover */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  .menu-list li {
+      width: 100%; /* Set full width for smaller screens */
+  }
+}
+
