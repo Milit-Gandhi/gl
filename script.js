@@ -9,6 +9,7 @@
 
 
 
+
 var timerElement;
 const isAuto = false;
 let timeLeft;
@@ -30,7 +31,7 @@ const questions = new Map([
     ["pandar", "15"],
     ["sod", "16"],
     ["satrar", "17"],
-    ["atthār", "18"],
+    ["adhār", "18"],
     ["odanis", "19"],
     ["vis", "20"],
     ["ekvīs", "21"],
@@ -38,13 +39,13 @@ const questions = new Map([
     ["tevis", "23"],
     ["chovīs", "24"],
     ["pachhīs", "25"],
-    ["chhabvis", "26"],
+    ["chhavis", "26"],
     ["sattyāvīs", "27"],
     ["atthāvīs", "28"],
     ["odantris", "29"],
-    ["tīs", "30"],
-    ["ikatīs", "31"],
-    ["beetīs", "32"],
+    ["trīs", "30"],
+    ["ikatris", "31"],
+    ["bartris", "32"],
     ["tetālis", "33"],
     ["chotris", "34"],
     ["patris", "35"],
@@ -53,9 +54,9 @@ const questions = new Map([
     ["odanchalis", "39"],
     ["chālis", "40"],
     ["ikatālīs", "41"],
-    ["bāvīs", "42"],
+    ["betalis", "42"],
     ["taintālīs", "43"],
-    ["chotalis", "44"],
+    ["chumbatalis", "44"],
     ["pistalis", "45"],
     ["chetalis", "46"],
     ["sudtalis", "47"],
@@ -87,7 +88,7 @@ const questions = new Map([
     ["tyoter", "73"],
     ["chumboter", "74"],
     ["pinchoter", "75"],
-    ["choter", "76"],
+    ["chyoter", "76"],
     ["sityoter", "77"],
     ["ithyoter", "78"],
     ["ogan-esi", "79"],
@@ -99,7 +100,7 @@ const questions = new Map([
     ["panchyasi", "85"],
     ["Chyāśī", "86"],
     ["satyasi", "87"],
-    ["atyasi", "88"],
+    ["athyasi", "88"],
     ["Nēvyāsī", "89"],
     ["nev", "90"],
     ["ekanu", "91"],
@@ -107,7 +108,7 @@ const questions = new Map([
     ["tranu", "93"],
     ["choranu", "94"],
     ["panchanu", "95"],
-    ["Channu", "96"],
+    ["Chan-nu", "96"],
     ["Satanu", "97"],
     ["Athanu", "98"],
     ["navanu", "99"],
